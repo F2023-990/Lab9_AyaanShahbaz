@@ -4,7 +4,7 @@ push:
 branches: [&quot;main&quot;]
 workflow_dispatch: {}
 env:
-IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/lab9
+IMAGE_NAME: ${{ secrets.f2023990 }}/lab9
 jobs:
 build-docker-push:
 runs-on: ubuntu-latest
