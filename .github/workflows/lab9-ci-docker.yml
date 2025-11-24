@@ -1,7 +1,7 @@
 name: Lab9 CI - Build Next.js + Docker Push
 on:
-push:
-branches: [&quot;main&quot;]
+  push:
+    branches: ["main"]
 workflow_dispatch: {}
 env:
 IMAGE_NAME: ${{ secrets.f2023990 }}/lab9
@@ -14,7 +14,7 @@ uses: actions/checkout@v4
 - name: Setup Node.js
 uses: actions/setup-node@v5
 with:
-node-version: &quot;20&quot;
+node-version: "20"
 - name: Install dependencies
 run: npm ci
 - name: Build Next.js project
